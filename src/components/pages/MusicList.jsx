@@ -8,7 +8,7 @@ import RemoveMusicModal from '../modals/RemoveMusicModal';
 
 export default function MusicList() {
     const [musicList, setMusicList] = useState("");
-    const { http } = AuthUser();
+    const { http, user } = AuthUser();
     const { folderId } = useParams();
     const [isLoading, setIsLoading] = useState(false);
 
